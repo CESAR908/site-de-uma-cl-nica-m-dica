@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - VistaClear</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        nav {
+            background-color: #2c3e50;
+            padding: 15px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #3498db;
+        }
+        header {
+            background-color: #ecf0f1;
+            padding: 20px;
+            text-align: center;
+        }
+        header img {
+            max-width: 100%;
+            height: auto;
+            max-height: 300px;
+        }
+        main {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+            min-height: 400px;
+        }
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+        h1, h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        .info-section {
+            margin: 30px 0;
+            padding: 20px;
+            background-color: #ecf0f1;
+            border-radius: 5px;
+        }
+        .info-section strong {
+            color: #2c3e50;
+        }
+        form {
+            background-color: #ecf0f1;
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #bdc3c7;
+            border-radius: 4px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+        }
+        textarea {
+            resize: vertical;
+            min-height: 150px;
+        }
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        textarea:focus {
+            outline: none;
+            border-color: #3498db;
+            background-color: #fff;
+        }
+        .button-group {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        button {
+            flex: 1;
+            padding: 12px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .btn-submit {
+            background-color: #27ae60;
+            color: white;
+        }
+        .btn-submit:hover {
+            background-color: #229954;
+        }
+        .btn-reset {
+            background-color: #e74c3c;
+            color: white;
+        }
+        .btn-reset:hover {
+            background-color: #c0392b;
+        }
+        .map-container {
+            margin: 30px 0;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        iframe {
+            width: 100%;
+            height: 400px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Página Principal</a>
+        <a href="sobre.html">Sobre a Clínica</a>
+        <a href="horario.html">Horário de Atendimento</a>
+        <a href="contato.html">Contato</a>
+    </nav>
+
+    <header>
+        <img src="https://via.placeholder.com/800x300?text=Entre+em+Contato" alt="Contato">
+    </header>
+
+    <main>
+        <h1>Entre em Contato Conosco</h1>
+
+        <div class="info-section">
+            <h2>Informações de Contato</h2>
+            <p><strong>Telefone:</strong> (11) 3456-7890</p>
+            <p><strong>WhatsApp:</strong> (11) 99876-5432</p>
+            <p><strong>Email:</strong> contato@vistaclear.com.br</p>
+        </div>
+
+        <div class="info-section">
+            <h2>Endereço</h2>
+            <p><strong>Clínica Oftalmológica VistaClear</strong></p>
+            <p>Avenida Paulista, 1000 - Apto 1500</p>
+            <p>Bairro: Bela Vista</p>
+            <p>São Paulo - SP, 01310-100</p>
+            <p>Brasil</p>
+        </div>
+
+        <h2>Localização no Mapa</h2>
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.1975508434766!2d-46.65611!3d-23.561414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xab35da2f5ca62674!2sAv.%20Paulista%2C%201000%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1234567890" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <h2>Formulário de Contato</h2>
+        <p>Preencha o formulário abaixo e entraremos em contato com você em breve.</p>
+
+        <form>
+            <div class="form-group">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="assunto">Assunto:</label>
+                <input type="text" id="assunto" name="assunto" required>
+            </div>
+
+            <div class="form-group">
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" required></textarea>
+            </div>
+
+            <div class="button-group">
+                <button type="submit" class="btn-submit">Enviar Mensagem</button>
+                <button type="reset" class="btn-reset">Limpar Formulário</button>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <p><strong>Clínica Oftalmológica VistaClear</strong></p>
+        <p>Telefone: (11) 3456-7890 | WhatsApp: (11) 99876-5432</p>
+        <p>Email: contato@vistaclear.com.br</p>
+        <p>&copy; 2026 - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
